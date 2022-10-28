@@ -5,3 +5,12 @@
   gap: 16px;
   padding: 0px;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.content {
+  padding: 0 4em;
+}
