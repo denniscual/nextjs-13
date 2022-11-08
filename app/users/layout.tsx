@@ -1,6 +1,7 @@
 import styles from "./layout.module.css";
 import { UserType } from "../types";
 import Link from "next/link";
+import LayoutClient from "./layout-client";
 
 export default async function UsersLayout({
   children,
@@ -10,7 +11,7 @@ export default async function UsersLayout({
   const users = await getUsers();
   return (
     <div className={styles.container}>
-      <ul className={styles.list}>
+      <ul className={styles.ist}>
         {users.map((user) => (
           <Link
             key={user.id}
@@ -24,6 +25,7 @@ export default async function UsersLayout({
         ))}
       </ul>
       <div className={styles.content}>{children}</div>
+      <LayoutClient />
     </div>
   );
 }
