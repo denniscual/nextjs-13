@@ -6,7 +6,6 @@ export default async function User({ params }: any) {
 }
 
 async function getUser(id: number): Promise<UserType> {
-  console.log("GET USER");
   const res = await fetch(`https://gorest.co.in/public/v2/users/${id}`, {
     cache: "no-store",
   });

@@ -23,7 +23,6 @@ export default async function UsersLayout({
 }
 
 async function getUsers(): Promise<UserType[]> {
-  console.log("GET USERS");
   const res = await fetch("https://gorest.co.in/public/v2/users", {
     cache: "no-store",
   });
