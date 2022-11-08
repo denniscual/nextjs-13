@@ -12,7 +12,13 @@ export default async function UsersLayout({
     <div className={styles.container}>
       <ul className={styles.list}>
         {users.map((user) => (
-          <Link key={user.id} href={`/users/${user.id}`}>
+          <Link
+            key={user.id}
+            href={`/users/${user.id}`}
+            style={{
+              marginBottom: "5em",
+            }}
+          >
             <li>{user.name}</li>
           </Link>
         ))}

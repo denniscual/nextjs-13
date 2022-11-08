@@ -6,6 +6,7 @@ export default function NavBar() {
     <nav className={styles.nav}>
       <NavLink href="/">Home</NavLink>
       <NavLink href="/users">Users</NavLink>
+      <NavLink href="/products">Products</NavLink>
     </nav>
   );
 }

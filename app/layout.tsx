@@ -1,6 +1,5 @@
 import "./globals.css";
 import styles from "./layout.module.css";
-import "./nav-bar.module.css";
 import NavBar from "./nav-bar";
 
 export default function RootLayout({
